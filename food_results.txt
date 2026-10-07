@@ -1,1 +1,2 @@
 # A) FOOD.CSV - t
+# B) LINES IN THE FILE / FOODS: 1343 / 992
