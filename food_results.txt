@@ -1,0 +1,20 @@
+# A) FOOD.CSV - t
+# B) LINES IN THE FILE / FOODS: 1343 / 992
+# C) TOP 5 FOOD GROUPS - 
+    377 
+     68 image/jpeg
+     16 Vegetables
+     16 
+     15 Type 1
+# D) TOP 5 FOOD GROUPS - AFTER REMOVING QUOTED TEXT: 
+    169 Aquatic foods
+    157 Fruits
+    147 Vegetables
+    126 Herbs and Spices
+     51 Dishes
+# E) FOODS STARTING WITH <letter>: COUNT AND TOP 5 FOOD GROUPS: 
+      8 Aquatic foods
+      5 Herbs and Spices
+      4 Vegetables
+      3 Fruits
+      3 Dishes
