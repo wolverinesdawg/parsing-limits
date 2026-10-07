@@ -6,3 +6,9 @@
      16 Vegetables
      16 
      15 Type 1
+# D) TOP 5 FOOD GROUPS - AFTER REMOVING QUOTED TEXT: 
+    169 Aquatic foods
+    157 Fruits
+    147 Vegetables
+    126 Herbs and Spices
+     51 Dishes
