@@ -12,3 +12,9 @@
     147 Vegetables
     126 Herbs and Spices
      51 Dishes
+# E) FOODS STARTING WITH <letter>: COUNT AND TOP 5 FOOD GROUPS: 
+      8 Aquatic foods
+      5 Herbs and Spices
+      4 Vegetables
+      3 Fruits
+      3 Dishes
