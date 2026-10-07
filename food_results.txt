@@ -1,2 +1,8 @@
 # A) FOOD.CSV - t
 # B) LINES IN THE FILE / FOODS: 1343 / 992
+# C) TOP 5 FOOD GROUPS - 
+    377 
+     68 image/jpeg
+     16 Vegetables
+     16 
+     15 Type 1
