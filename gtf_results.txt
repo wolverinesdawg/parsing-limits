@@ -1,0 +1,8 @@
+# A) GTF - data/chr21.gtf
+# B) LINES CONTAINING gene / GENE LINES: 49887 / 1134
+# C) THIRD KEY IN COLUMN 9: 
+    582  gene_name 
+    552  gene_source 
+  48753  transcript_id 
+# D) GENE NAMES: LINES NOT CONVERTED BY sed / NAMES WITH sed -n p: 552  / 582
+# E) TAGS WITH grep -o / TAGS WITH sed: 5191 / 2658
