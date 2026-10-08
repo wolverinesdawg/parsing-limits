@@ -1,0 +1,32 @@
+a. The first number is simply the number of lines in the file while the second is the number of lines that 
+contain the word "FOOD" somewhere on the line. Not every line in Food.csv has the word "FOOD" because
+some descriptions in the file contain line breaks. One food can span multiple lines and whereas each
+food has only one instance of "public_id:FOOD". This causes fewer lines to contain "FOOD" than lines
+in the file total. In C, the presence of these extra line breaks in descriptions between quotations
+causes the script to read that part of the column as different lines and count some blank or odd 
+looking lines as the output. 
+
+b. Both D and E match with the python script output, however, the order the results are listed is different.
+For example, D output line 1 in my script is:
+    169 Aquatic foods
+vs from the python script:
+Aquatic foods       169
+so the syntax of the output has changed. 
+Deleting quoted text also removed the line breaks that were causing issues when counting lines.
+
+c. B counts each line that contains the word "gene" at all first then counts lines where the third column
+is exactly "gene", a major limiting distinction between the two because essentially all lines have the 
+word "gene" somewhere on the line as they have many sections. 
+C takes the third field in the ninth column and counts each unique instance disregarding the information in quotes. 
+Searching for text or counting positions fails in column 9 because it is split into fields that are separated
+by semicolons, spaces, and contains words in quotations. 
+D finds lines where no gene name is present at first and then finds the opposite count by adding -n p. 
+Not all gene lines contain a gene name, so the script will print the whole line unedited when no gene name is 
+found, and will print only the gene name when it is found. Both numbers in gtf_results.txt part D match
+those in pandas_results.txt - 552 without gene names and 582 with gene names that corresponds to lines 
+converted by sed and lines converted by sed -n p, respectively.
+
+d. The count using grep -o matches the numbers in pandas_result.txt if you add them all together. 
+The other misses because sed only captures the first tag value per line, so it misses any tag values
+that proceeded another on the same line, leading to a lower number comparatively. grep -o on the other 
+hand prints each occurance on its own line, getting a full count.
