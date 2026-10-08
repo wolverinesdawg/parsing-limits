@@ -8,4 +8,4 @@ sed '1d' data/Food.csv | cut -d',' -f12 | sort| uniq -c | sort -nr | head -5
 echo "# D) TOP 5 FOOD GROUPS - AFTER REMOVING QUOTED TEXT: "
 sed '1d' data/Food.csv | tr '\n' '~' | sed 's/"[^"]*"//g' | tr '~' '\n' | cut -d',' -f12 | sort| uniq -c | sort -nr | head -5
 echo "# E) FOODS STARTING WITH <letter>: COUNT AND TOP 5 FOOD GROUPS: "
-sed '1d' data/Food.csv | tr '\n' '~' | sed 's/"[^"]*"//g' | tr '~' '\n' | awk -F',' '$2 ~ /^T/' |cut -d',' -f12 | sort| uniq -c | sort -nr | head -5
+sed '1d' data/Food.csv | tr '\n' '~' | sed 's/"[^"]*"//g' | tr '~' '\n' | awk -F',' '$2 ~ /^[Tt]/' |cut -d',' -f12 | sort| uniq -c | sort -nr | head -5
